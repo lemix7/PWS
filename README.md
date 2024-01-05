@@ -1,6 +1,6 @@
-Photography Workshop Project
+# Photography Workshop Project
 
-Description
+## Description
 
 This project aims to organize a Photography Workshop for students interested in learning the art and techniques of photography. The workshop will cover various aspects of photography, including composition, lighting, camera settings, and post-processing.
 
