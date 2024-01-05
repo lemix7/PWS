@@ -1,0 +1,519 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  width: 200px;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: black;
+  background-color: #020202;
+  color: #fffff0;
+
+}
+
+/* Home Page */
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem;
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.734); */
+  /* margin-bottom: 3rem; */
+  /* position: fixed; */
+  /* top: 0; */
+}
+
+header h1 {
+  font-size: 3.5rem;
+  font-weight: 200;
+  letter-spacing: 4px;
+  color: #fffff0;
+}
+
+nav {
+  margin-right: 3rem;
+}
+
+nav a {
+  font-size: 2rem;
+  margin-left: 5rem;
+  font-weight: 200;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact {
+  font-size: 2rem;
+  font-weight: 200;
+  border: 1px solid #fffff0;;
+  padding: 1.5rem 3rem;
+  border-radius: 35px;
+}
+
+.contact:hover {
+  background-color:  #fffff0;;
+  color: black;
+}
+
+nav a:hover {
+  /* color: hsla(0, 0%, 95%, 0.819); */
+  background-color: #fffff0;
+  color: black;
+  border-radius: 35px;
+  padding: 1.5rem;
+}
+
+.background {
+  background: url(images/hero-2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.hero {
+  width: 100%;
+  height: 850px;
+  /* background: url(images/hero-2.jpg); */
+  /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+/* .hero h2 {
+  font-size: 3.5rem;
+  margin-top: 10rem;
+  font-weight: 200;
+  letter-spacing: 1.38rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+} */
+
+.hero > p {
+  font-size: 2.8rem;
+  font-weight: 200;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+  color: #ffffff;
+
+}
+
+.hero h1 {
+  font-size: 12rem;
+  font-weight: 700;
+  margin-top: 20rem;
+  margin-bottom: 5rem;
+  letter-spacing: 2px;
+  color: #ffffff;
+
+}
+
+.promte {
+  width: 950px;
+  height: 300px;
+  border-radius: 20px;
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  /* background: rgba(7, 0, 0, 0.732); */
+  padding: 2rem;
+}
+
+.promte p {
+  font-size: 2.8rem;
+  font-weight: 200;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 11rem;
+}
+
+.promte a {
+  border: 2px solid #fffff0;
+  padding: 2rem 3rem;
+  font-size: 2.2rem;
+  font-weight: 500;
+  border-radius: 35px;
+  letter-spacing: 1px;
+  transition: all 0.2s ease-in-out;
+}
+
+.promte a:hover {
+  background-color: #fffff0;
+  color: black;
+}
+
+.sessions {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.sessions h2 {
+  font-size: 5rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.sessions > p {
+  font-size: 2.5rem;
+  font-weight: 200;
+  margin: 2rem 0;
+  letter-spacing: 2px;
+}
+
+.images {
+  display: flex;
+  /* width: 1200px; */
+  /* justify-content: space-between; */
+  gap: 5rem;
+  margin-top: 5rem;
+  justify-content: center;
+  /* border: 2px solid white; */
+}
+
+.img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img p {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 200;
+  margin-bottom: 1.5rem;
+}
+
+.img span {
+  text-align: center;
+  font-weight: 200;
+  font-size: 1.7rem;
+  letter-spacing: 3px;
+}
+.photo {
+  /* border: 1px solid white; */
+  width: 320px;
+  height: 650px;
+  margin-bottom: 1.5rem;
+  filter: blur(4px);
+  transition: all 0.2s ease-in-out;
+  border-radius: 2px;
+}
+
+/* To remove the blur effect on hover remove the filter blur and the hover from the photo class */
+
+.photo:hover {
+  filter: blur(0px);
+  transform: scale(1.1);
+  margin-bottom: 5rem;
+}
+
+.photo-1 {
+  background: url(images/Manhattan\ Bridge.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.photo-2 {
+  background: url(images/Chrysler\ Tower.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.photo-3 {
+  background: url(images/Maat\ Handrail.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.photo-4 {
+  background: url(images/monochrome\ flatiron.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.impressions {
+  width: 100%;
+  /* height: 1000px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  padding: 1rem 3rem;
+}
+
+.impressions h2 {
+  font-size: 5rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6rem;
+  margin-top: 8rem;
+}
+
+.rev {
+  width: 45%;
+  border: 1px solid  #fffff0;;
+  padding: 3rem 3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 15px;
+  line-height: 1.5;
+}
+
+.rev p {
+  font-size: 1.7rem;
+  font-weight: 200;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.rev span {
+  font-size: 1.5rem;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.more {
+  width: 100%;
+  /* height: 600px; */
+  margin-top: 10rem;
+}
+
+.more h2 {
+  font-size: 5rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.more p {
+  font-size: 2.2rem;
+  text-align: center;
+  font-weight: 200;
+  width: 800px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+.more a {
+  text-decoration: underline;
+}
+
+.more a:hover {
+  color: hsla(0, 0%, 95%, 0.819);
+}
+
+footer {
+  width: 100%;
+  height: 150px;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8rem;
+}
+
+footer hr {
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+footer .rights {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+footer .rights p {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+/* Contact Page */
+
+.container {
+  width: 100%;
+  height: 700px;
+  /* border: 2px solid white; */
+  display: flex;
+}
+
+.touch {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 2px solid white; */
+}
+
+.box {
+  /* border: 2px solid white; */
+  margin-top: 20rem;
+}
+
+.box h2 {
+  font-size: 8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  word-spacing: 15px;
+}
+
+.box p {
+  font-size: 2.5rem;
+  font-weight: 200;
+  margin: 2rem 3rem;
+}
+
+.form {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-surname,
+.email-phone {
+  display: flex;
+  gap: 5rem;
+}
+
+.name,
+.surname,
+.email,
+.phone {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.name input,
+.surname input,
+.email input,
+.phone input {
+  width: 300px;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #fffff0;
+  padding: 1rem;
+  font-size: 1.8rem;
+  font-weight: 200;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  color: #fffff0;
+}
+
+input:focus {
+  border: 1px solid #fffff0;
+}
+
+.name label,
+.surname label,
+.email label,
+.phone label,
+.message label {
+  font-size: 1.8rem;
+  font-weight: 200;
+  margin-bottom: 1rem;
+  color: white;
+  text-transform: capitalize;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  background-color: transparent;
+  color: #fffff0;
+}
+
+.message textarea {
+  width: 100%;
+  height: 200px;
+  border: none;
+  outline: none;
+  font-family: Helvetica;
+  padding: 1rem;
+  font-size: 1.8rem;
+  font-weight: 200;
+  margin-bottom: 2rem;
+  background-color: transparent;
+  color: #fffff0;
+  resize: none;
+  border-bottom: 1px solid #fffff0;
+}
+.message textarea:focus {
+  border: 1px solid white;
+}
+.btn {
+  width: 100%;
+  /* border: 2px solid white; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn button {
+  border: none;
+  border: 1px solid #fffff0;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 1rem 4rem;
+  text-transform: capitalize;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.btn button:hover {
+  background-color: white;
+  color: black;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+/* About Page */
+
