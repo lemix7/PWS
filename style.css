@@ -761,3 +761,41 @@ main{
 .reg a:hover{
   text-decoration: underline;
 }
+
+/* register page */
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px; 
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  margin-right: 10px;
+}
+
+input[type=date] {
+  width: 150px;
+}
+
+button {
+  width: 25%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#totalCost {
+  font-weight: bold;
+  text-align: center;
+}
+
+h1, p {
+  text-align: center;
+}
