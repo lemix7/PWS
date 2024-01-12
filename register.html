@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWS Homepage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <header >
+            <div class="logo">
+                <h1><a href="home.html">PWS</a></h1>
+            </div>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="#sessions">Sessions</a>
+                <a href="">About</a>
+                <a href="">Register</a>
+            </nav>
+
+            <a class="contact" href="contact.html">Contact us </a>
+        </header>
+
+        </div>
+    </div>
+
+    <h1>Workshop Registration</h1>
+    <form id="form" style="background-color: rgb(255, 255, 255); color: black;   width: 80%; margin: 0 auto;">
+        <table>
+            <tr style="background-color: rgb(137, 135, 132);">
+                <th>Participant Type</th>
+                <th>Session</th>
+                <th>From</th>
+                <th>To</th>
+                <th>Cost</th>
+            </tr>
+            <tr>
+                <td rowspan="5">
+                    <input type="radio" name="participantType" value="presenter"> Presenter (150€) <br>
+                    <input type="radio" name="participantType" value="audience"> Audience (100€)
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="session" value="1">Introduction to Photography Basics (100€)</td>
+                <td rowspan="4" style="vertical-align: top; text-align: left;">
+                    <input type="date" name="from" min="2024-01-22" max="2024-01-26">
+                  </td>
+                  <td rowspan="4" style="vertical-align: top; text-align: left;">
+                    <input type="date" name="to" min="2024-01-22" max="2024-01-26">
+                  </td>
+                  
+                <td id="cost1">0</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="session" value="2">Lighting Techniques (200€)</td>
+                <td id="cost2">0</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="session" value="3">Post-Processing and Editing (300€)</td>
+                <td id="cost3">0</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="session" value="4"> Specialized Photography Styles (400€)</td>
+                <td id="cost4">0</td>
+            </tr>
+            <tr>
+                <td colspan="2">Total Cost:</td>
+                <td colspan="2" style="text-align: right;">
+                    <button type="button" onclick="calculate()">Calculate</button>
+                  </td>
+                  
+                <td id="totalCost">0 (€)</td>
+            </tr>
+        </table>
+    </form>
+
+    <footer> 
+        <hr>
+        <div class="rights">
+            <p>Copyright © 2024</p>
+            <p>Designed and developed by Ahmad mohamed & Mohamed abdulkadir </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
