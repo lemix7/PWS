@@ -7,9 +7,9 @@ var cost = document.getElementById("cost");
 var totalCost = document.getElementById("totalCost");
 
 // Define the prices for each participant type and session
-var presenterPrice = 150;
+var presenterPrice = 50;
 var audiencePrice = 100;
-var sessionPrices = [100, 200, 300, 400];
+var sessionPrices = [10, 20, 30, 40];
 
 // Define a function to calculate the number of days between two dates
 function getDays(date1, date2) {
@@ -57,13 +57,26 @@ function calculateTotalCost() {
   // Display the total cost
   totalCost.innerHTML = total + " (€)";
   // Prompt the confirmation message
-  var confirm = window.confirm("Do you accept the calculated total cost for payment?");
+  var confirm = confirm;
+  window.confirm("Do you accept the calculated total cost for payment?");
   if (confirm) {
     // Alert the thank you message
     window.alert("Thank you for registering for the workshop!");
   } else {
     // Alert the application withdraw message
-    window.alert("Sorry to hear that you are not interested in the workshop.");
+    window.alert(" application withdraw");
+  }
+}
+function dumcount() {
+  var numChecked = 0;
+  var dom = document.getElementById("form");
+
+  var checkboxes = dom.querySelectorAll('input[type="checkbox"]');
+  
+  for (var index = 0; index < checkboxes.length; index++) {
+    if (checkboxes[index].checked) {
+      numChecked++;
+    }
   }
 }
 
