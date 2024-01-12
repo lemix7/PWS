@@ -765,37 +765,78 @@ main{
 /* register page */
 
 
+h1, p {
+  text-align: center;
+}
+
+.title{
+  font-size: 6rem;
+  font-weight: 200;
+  text-transform: capitalize;
+  text-align: center;
+  margin: 8rem 0;
+}
+
+
 table {
   border-collapse: collapse;
   width: 100%;
   margin-top: 20px; 
+  margin-bottom: 10rem;
+
 }
+
+
 
 th, td {
   border: 1px solid black;
   padding: 10px;
+  height: 80px;
+  font-size: 2rem;
 }
 
 input[type=checkbox],
 input[type=radio] {
   margin-right: 10px;
 }
+input[type=radio]{
+  margin-bottom: 3rem;
+}
 
 input[type=date] {
   width: 150px;
 }
 
-button {
-  width: 25%;
+.calc {
   padding: 10px;
+  width: 150px;
+  height: 50px;
+  border-radius: 2rem;
+  border: none;
   margin-top: 10px;
+  cursor: pointer;
+  font-size: 2rem;
+  background-color: #bdbdbd;
 }
+
+.calc:hover {
+  background-color: #bdbdbdd1;
+rgba(206, 198, 198, 0.82)
+}
+
+
 
 #totalCost {
   font-weight: bold;
   text-align: center;
 }
 
-h1, p {
+
+.discount{
   text-align: center;
+  font-size: 1.4rem;
+  word-spacing: 5px;
+  margin-bottom: 5rem;
+  padding: .7rem;
+  font-weight: 400;
 }
