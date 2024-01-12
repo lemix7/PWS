@@ -57,8 +57,7 @@ function calculateTotalCost() {
   // Display the total cost
   totalCost.innerHTML = total + " (€)";
   // Prompt the confirmation message
-  var confirm = confirm;
-  window.confirm("Do you accept the calculated total cost for payment?");
+  var confirm = window.confirm("Do you accept the calculated total cost for payment?");
   if (confirm) {
     // Alert the thank you message
     window.alert("Thank you for registering for the workshop!");
